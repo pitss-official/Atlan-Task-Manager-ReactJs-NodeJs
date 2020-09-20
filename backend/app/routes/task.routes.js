@@ -1,0 +1,15 @@
+const upload = require('../../streams/uploadStream')
+module.exports = app =>{
+    const task = require("../controllers/task.controller")
+    let router = require("express").Router()
+    router.get('/',task.index)
+    router.post('/',upload.single('file'),task.create)
+    router.put('/:id',task.resume)
+    router.delete('/:id',task.delete)
+    router.get('/:id',task.export)
+    router.post('/:id',task.pause)
+    router.get('/:id/status',task.status)
+    router.get('/:id/download/status',task.downloadStatus)
+    router.get('/:id/download/pause',task.downloadPause)
+    app.use('/task',router)
+};

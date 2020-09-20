@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AACA,QACE,wBAFoB,CAGrB,kBAEC,wBAA4B,CAC7B,aAEC,UAAW","file":"main.7b33f73b.chunk.css","sourcesContent":["$siteNavColor :#2026d2;\r\n.nav-bg{\r\n  background-color: $siteNavColor;\r\n}\r\n.task-card-header{\r\n  background-color: whitesmoke;\r\n}\r\n.btn-control{\r\n  width: 70px;\r\n}"]}
