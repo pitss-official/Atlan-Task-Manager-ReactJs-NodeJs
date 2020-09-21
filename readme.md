@@ -6,10 +6,11 @@ To Get Started, Download this repo
 ```shell script
 docker-compose -f docker-compose.yml up --build
 ```
-then visit
+once the message is displayed that server started at http://localhost:8000 (backend node server)
 ```html
-http://localhost
+http://localhost (frontend ngnix server)
 ```
+test using sample csv files in the repo. "Recsmall.csv" and "records.csv"
 
 Various API available:
 
